@@ -180,17 +180,6 @@ NammaShanti/
 
 ---
 
-## 🔮 Roadmap
-
-- [ ] **Voice Note Processing** — Transcribe Telegram voice messages via Gemini
-- [ ] **Kannada-First Translation** — Auto-translate responses back to Kannada for local citizens
-- [ ] **Automated FIR Drafting** — Generate Karnataka Police FIR format for high-threat incidents
-- [ ] **Real-time GPS Fleet** — Replace mock police unit markers with live KSRP vehicle tracking
-- [ ] **Webhook Mode** — Replace `run_polling()` with official Telegram Webhooks for production
-- [ ] **Firebase Auth** — Restrict dashboard access to authenticated police officers
-
----
-
 ## ⚠️ Important Notes
 
 - The `firebase-service-account.json` and `.env` files are **gitignored** and must never be committed.
@@ -201,6 +190,6 @@ NammaShanti/
 
 ## 🏆 Built For
 
-**NammaShanti 2.0** was built as a hackathon prototype demonstrating how AI can empower civic safety infrastructure for the city of Bengaluru.
+**NammaShanti** was built as a hackathon prototype demonstrating how AI can empower civic safety infrastructure for the city of Bengaluru.
 
 > *"Shanti" means peace in Kannada. NammaShanti means "Our Peace."*
