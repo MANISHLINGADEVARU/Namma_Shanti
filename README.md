@@ -1,4 +1,4 @@
-# 🛡️ NammaShanti 2.0
+# 🛡️ NammaShanti 
 
 > **AI-powered civic threat intelligence and rumour triage platform for Bengaluru Police & BBMP**
 
