@@ -70,7 +70,7 @@ Panic Index = (Static Score × 0.3) + (Velocity Score × 0.4) + (Semantic Score 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/NammaShanti.git
+git clone https://github.com/your-username/NammaShanti.git](https://github.com/MANISHLINGADEVARU/Namma_Shanti.git
 cd NammaShanti
 ```
 
