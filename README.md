@@ -6,6 +6,23 @@ NammaShanti is a real-time multimodal command-and-control system that ingests ci
 
 ---
 
+## 🔵 Built on Google Technologies
+
+NammaShanti is deeply integrated with the Google ecosystem across every layer of its stack:
+
+| Google Product | How It's Used |
+|---|---|
+| **Gemini 2.5 Flash** | Core AI engine — reads text, watches video reels, and analyzes scraped article content to compute threat assessments and draft official police responses |
+| **Gemini File API** | Uploads citizen-submitted video reels to Google's cloud for multimodal visual + audio analysis before triage |
+| **Google Maps Platform** | Powers the real-time commander dashboard — renders live incident markers, police patrol unit overlays, and interactive InfoWindows across Bengaluru |
+| **Firebase Firestore** | Real-time NoSQL database that syncs incidents between the Python backend and React frontend with zero-latency push listeners |
+| **Firebase Hosting** *(ready)* | Frontend deployment target for production release of the React dashboard |
+| **Google AI Studio** | API key management and usage monitoring for Gemini |
+
+> NammaShanti demonstrates how **Gemini's multimodal capabilities** (text + video + web content) combined with **Google Maps spatial intelligence** and **Firebase real-time infrastructure** can be unified into a single life-safety platform.
+
+---
+
 ## 🌟 Key Features
 
 | Feature | Description |
