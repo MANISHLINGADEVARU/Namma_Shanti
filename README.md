@@ -15,6 +15,8 @@ NammaShanti is deeply integrated with the Google ecosystem across every layer of
 | **Gemini 2.5 Flash** | Core AI engine — reads text, watches video reels, and analyzes scraped article content to compute threat assessments and draft official police responses |
 | **Gemini File API** | Uploads citizen-submitted video reels to Google's cloud for multimodal visual + audio analysis before triage |
 | **Google Maps Platform** | Powers the real-time commander dashboard — renders live incident markers, police patrol unit overlays, and interactive InfoWindows across Bengaluru |
+| **Google Maps Visualization API** | Powers the spatial intelligence layer, rendering dynamic heatmaps based on Panic Index density to identify riot/threat clusters |
+| **Google Compute Engine (GCE)** | Hosts the Python backend 24/7 on an `e2-micro` Virtual Machine to continuously poll Telegram without sleeping |
 | **Firebase Firestore** | Real-time NoSQL database that syncs incidents between the Python backend and React frontend with zero-latency push listeners |
 | **Firebase Hosting** *(ready)* | Frontend deployment target for production release of the React dashboard |
 | **Google AI Studio** | API key management and usage monitoring for Gemini |
@@ -129,7 +131,34 @@ VITE_FIREBASE_APP_ID="your_app_id"
 
 ---
 
+### Option B: Cloud Deployment (Production)
+
+**1. Deploy Frontend to Firebase Hosting:**
+```bash
+cd frontend
+npm run build
+firebase deploy --only hosting
+```
+The dashboard will be live at `https://nammashanti-20b1e.web.app`.
+
+**2. Deploy Backend to Google Compute Engine (GCE) VM:**
+To keep the bot running 24/7 without needing to rewrite it for Webhooks:
+1. Create an **e2-micro** instance in Google Cloud Console.
+2. SSH into the VM and install python/git (`sudo apt install -y python3-pip python3-venv`).
+3. Upload `bot.py`, `engine.py`, `contract.json`, `.env`, and `firebase-service-account.json`.
+4. Run in the background using `nohup`:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+nohup python bot.py > bot.log 2>&1 &
+```
+*See `backend/DEPLOY_GCE_VM.md` for a full step-by-step guide.*
+
+---
+
 ## ▶️ Running the Application
+### Option A: Run Locally (Development)
 
 ### Start the Backend Bot
 ```bash
