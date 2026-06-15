@@ -238,4 +238,6 @@ NammaShanti/
 
 **NammaShanti** was built as a hackathon prototype demonstrating how AI can empower civic safety infrastructure for the city of Bengaluru.
 
+## For complete reference of our hackathon journey refer the below blog post
+https://journey-of-nammashanti.hashnode.dev/how-we-built-nammashanti-an-ai-powered-civic-threat-intelligence-system-for-bengaluru
 > *"Shanti" means peace in Kannada. NammaShanti means "Our Peace."*
